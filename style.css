@@ -1,0 +1,71 @@
+body {
+    margin: 0; /* Removes default margin around the body */
+    background: linear-gradient(to left, #ffefd5, #87cefa);/* Sets a gradient background transitioning from 
+    light yellow to sky blue */
+    font-family: cursive; /* Applies a cursive font style to the text on the page */
+}
+
+.heading {
+    color: #4b0082; /* Sets the text color to indigo */
+    text-align: center; /* Centers the heading text */
+    padding-top: 10px; /* Adds padding above the heading */
+    font-size: 35px; /* Sets the font size of the heading */
+}
+
+.info-text {
+    text-align: center; /* Centers the informational text */
+    color: #4b0082; /* Sets the text color to indigo */
+    font-size: 18px; /* Sets the font size of the text */
+}
+
+.app {
+    display: grid; /* Enables a grid layout for child elements */
+    grid-template-columns: repeat(auto-fill, 300px); /* Creates columns that automatically adjust to fit 300px-wide elements */
+    gap: 40px; /* Adds 40px spacing between grid items */
+    justify-content: center; /* Centers the grid items horizontally */
+    padding: 50px; /* Adds padding around the grid container */
+}
+
+.note {
+    padding: 17px; /* Adds inner padding inside the note box */
+    border-radius: 15px; /* Rounds the corners of the note box */
+    resize: none; /* Disables resizing of the note box */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow around the note box */
+    font-size: 18px; /* Sets the font size for the note content */
+    height: 200px; /* Fixes the height of the note box */
+    color: #82001c; /* Sets the text color to a dark red */
+    border: none; /* Removes any borders from the note box */
+    outline: none; /* Removes the default focus outline */
+    background: rgba(255, 255, 255, 0.7); /* Sets a semi-transparent white background */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total size */
+    transition: all 0.3s ease; /* Adds a smooth transition effect for hover and focus styles */
+}
+
+.note::placeholder {
+    color: gray; /* Sets the color of the placeholder text */
+    opacity: 0.5; /* Makes the placeholder text semi-transparent */
+}
+
+.note:hover,
+.note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Increases the shadow intensity when hovering or focusing */
+    background: rgba(255, 255, 255, 0.9); /* Slightly increases the background opacity */
+}
+
+.btn {
+    height: 200px; /* Sets the height of the button */
+    border: none; /* Removes the button border */
+    border-radius: 10%; /* Rounds the button into an elliptical shape */
+    font-size: 70px; /* Sets the font size of the "+" text */
+    font-weight: 700; /* Makes the text bold */
+    color: #4b0082; /* Sets the text color to indigo */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    background-color: #ffd700; /* Sets the button background color to gold */
+    transition: all 0.3s ease; /* Adds a smooth transition effect for hover styles */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+    background-color: #ff6347; /* Changes the background color to tomato red on hover */
+    color: aliceblue; /* Changes the text color to a pale blue on hover */
+}
